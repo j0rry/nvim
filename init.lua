@@ -83,8 +83,8 @@ vim.opt.scrolloff = 10
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("n", "<C-b>", "<Cmd>Neotree toggle<CR>")
-vim.keymap.set({'i'}, '<C-s>', '<C-o>:w<ENTER>')
-vim.keymap.set({'n'}, '<C-s>', ':w<ENTER>')
+vim.keymap.set({ "i" }, "<C-s>", "<C-o>:w<ENTER>")
+vim.keymap.set({ "n" }, "<C-s>", ":w<ENTER>")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
@@ -755,6 +755,13 @@ require("lazy").setup({
 		--
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
 		"folke/tokyonight.nvim",
+		opts = {
+			transparent = true,
+			styles = {
+				sidebars = "transparent",
+				floats = "transparent",
+			},
+		},
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		init = function()
 			-- Load the colorscheme here.
