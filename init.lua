@@ -83,6 +83,7 @@ vim.opt.scrolloff = 10
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("n", "<C-b>", "<Cmd>Neotree toggle<CR>")
+vim.keymap.set("i", "<C-b>", "<Cmd>Neotree toggle<CR>")
 vim.keymap.set({ "i" }, "<C-s>", "<C-o>:w<ENTER>")
 vim.keymap.set({ "n" }, "<C-s>", ":w<ENTER>")
 
