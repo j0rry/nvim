@@ -1,7 +1,7 @@
 # My nvim config
 
 
-## Usage
+## Install nvim with config
 
 ```
 sudo add-apt-repository ppa:neovim-ppa/unstable -y
